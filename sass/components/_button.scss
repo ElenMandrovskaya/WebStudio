@@ -1,0 +1,40 @@
+.main__btn {
+  @include flex(center, center);
+  margin: 0 auto;
+  padding: 10px 0;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-text-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--reserve-text-color);
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  @include flex(center, center);
+
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: #ffffff;
+  fill: 212121;
+
+  transition: fill var(--timing-fn);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+}
