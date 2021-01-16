@@ -10,7 +10,7 @@
         "../sass/base/_section.scss",
         "../sass/components/_logo.scss",
         "../sass/utils/_mixins.scss",
-        "../sass/components/_button.scss",
+        "../sass/base/_button.scss",
         "../sass/components/_page-header.scss",
         "../sass/components/_page-footer.scss",
         "../sass/components/_portfolio-filter.scss",
