@@ -43,20 +43,19 @@
       fill: var(--accent-text-color);
     }
   }
-  .textarea {
-    &::placeholder {
-      font-size: 12px;
-      line-height: 1.16;
-      letter-spacing: 0.01em;
-
-      color: rgba(117, 117, 117, 0.5);
-    }
-  }
 }
 .textarea {
   height: 120px;
   padding: 12px 16px;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
+
 .modal-form__icon {
   position: absolute;
   bottom: 11px;
@@ -82,14 +81,13 @@
     border-radius: 2px;
     margin-right: 7px;
     transition: all var(--timing-fn);
-
-    .checkbox__input:checked + & {
-      background-color: var(--accent-text-color);
-      background-image: url(../images/logo-checked.svg);
-      background-size: contain;
-      background-origin: border-box;
-      border-color: transparent;
-    }
+  }
+  .checkbox__input:checked + & {
+    background-color: var(--accent-text-color);
+    background-image: url(../images/logo-checked.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: transparent;
   }
 }
 .policy-link {
