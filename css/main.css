@@ -821,22 +821,6 @@ textarea {
   }
 }
 
-.clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.clients__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -848,7 +832,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   color: #afb1b8;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid;
   border-radius: 4px;
@@ -863,5 +847,61 @@ textarea {
 
 .clients__logo {
   fill: currentColor;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .clients__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
+  .clients__item {
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    -ms-flex-preferred-size: calc(100% / 2 - var(--card-set-gap));
+        flex-basis: calc(100% / 2 - var(--card-set-gap));
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__link {
+    width: 226px;
+  }
+  .clients__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+  }
+  .clients__item {
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    -ms-flex-preferred-size: calc(100% / 3 - var(--card-set-gap));
+        flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .clients__link {
+    width: 170px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
