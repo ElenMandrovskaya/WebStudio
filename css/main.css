@@ -708,15 +708,6 @@ textarea {
   background: #f5f4fa;
 }
 
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .team__item {
   padding-bottom: 30px;
   background-color: var(--reserve-text-color);
@@ -725,10 +716,12 @@ textarea {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .team-item__info {
   margin-top: 30px;
-  padding-right: 32px;
-  padding-left: 32px;
 }
 
 .team-item__name {
@@ -752,10 +745,14 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 16px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-list__link {
