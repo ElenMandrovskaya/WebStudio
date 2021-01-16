@@ -832,7 +832,6 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   color: #afb1b8;
-  width: 210px;
   height: 90px;
   border: 1px solid;
   border-radius: 4px;
@@ -850,6 +849,9 @@ textarea {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients__link {
+    width: 210px;
+  }
   .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
