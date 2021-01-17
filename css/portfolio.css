@@ -296,22 +296,7 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
-}
-
-.footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.footer__wrap {
-  width: 231px;
+  text-align: center;
 }
 
 .footer-address__list {
@@ -319,7 +304,7 @@ textarea {
 }
 
 .footer-address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-address__link {
@@ -331,10 +316,6 @@ textarea {
 
 .footer-address__link.map {
   color: var(--reserve-text-color);
-}
-
-.footer__social {
-  margin-left: 70px;
 }
 
 .footer-social__title,
@@ -353,10 +334,13 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 206px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social__link {
@@ -386,27 +370,15 @@ textarea {
   fill: currentColor;
 }
 
-.subscription {
-  display: block;
-  margin-left: 93px;
-  width: 570px;
-}
-
 .subscription-btn__icon {
   margin-left: 10px;
   fill: currentColor;
 }
 
-.subscription__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .subscription__input {
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  min-width: 358px;
+  min-width: 450px;
   min-height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -448,6 +420,11 @@ textarea {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__social,
+.subscription {
+  margin-top: 60px;
 }
 
 .portfolio__filter {
