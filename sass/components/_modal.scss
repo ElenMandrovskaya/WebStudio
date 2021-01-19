@@ -3,35 +3,73 @@
   top: 0;
   left: 0;
 
-  min-width: 100%;
+  width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
   transition: opacity 700ms linear;
-  &.is-hidden {
-    opacity: 0;
-    visibility: none;
-    pointer-events: none;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
 
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
   border-radius: 4px;
   background-color: var(--reserve-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
   transition: transform 700ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0);
+}
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-  .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0);
+  @include flex(center, center);
+
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: #ffffff;
+  fill: 212121;
+
+  transition: fill var(--timing-fn);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
