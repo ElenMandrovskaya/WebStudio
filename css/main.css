@@ -483,6 +483,34 @@ textarea {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: #ffffff;
+  fill: 212121;
+  -webkit-transition: fill var(--timing-fn);
+  transition: fill var(--timing-fn);
+}
+
+.modal__btn-close:hover, .modal__btn-close:focus {
+  fill: var(--accent-text-color);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -549,8 +577,8 @@ textarea {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background: #ffffff;
   fill: 212121;
+  outline: none;
   -webkit-transition: fill var(--timing-fn);
   transition: fill var(--timing-fn);
 }
