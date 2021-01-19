@@ -46,13 +46,13 @@
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  fill: 212121;
+  fill: currentColor;
   outline: none;
-  transition: fill var(--timing-fn);
+  transition: color var(--timing-fn);
 
   &:hover,
   &:focus {
-    fill: var(--accent-text-color);
+    color: var(--accent-text-color);
   }
 }
 

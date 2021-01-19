@@ -577,14 +577,14 @@ textarea {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  fill: 212121;
+  fill: currentColor;
   outline: none;
-  -webkit-transition: fill var(--timing-fn);
-  transition: fill var(--timing-fn);
+  -webkit-transition: color var(--timing-fn);
+  transition: color var(--timing-fn);
 }
 
 .modal__btn-close:hover, .modal__btn-close:focus {
-  fill: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 @media screen and (max-width: 1199px) {
