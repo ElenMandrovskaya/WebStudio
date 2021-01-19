@@ -6,12 +6,10 @@
   width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-
+  overflow-y: scroll;
   opacity: 1;
   transition: opacity 700ms linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -25,8 +23,6 @@
   // left: 50%;
 
   padding: 40px;
-  // width: 528px;
-  // height: 581px;
   border-radius: 4px;
   background-color: var(--reserve-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
