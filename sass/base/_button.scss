@@ -15,28 +15,12 @@
   background-color: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-.modal__btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  @include flex(center, center);
-
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background: #ffffff;
-  fill: 212121;
-
-  transition: fill var(--timing-fn);
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-text-color);
-  }
+.menu-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
 }
-// .menu-button {
-// }
