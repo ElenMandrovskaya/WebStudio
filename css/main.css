@@ -428,7 +428,7 @@ textarea {
 }
 
 .modal__btn-close {
-  position: absolute;
+  position: relative;
   top: 8px;
   right: 8px;
   display: -webkit-box;
