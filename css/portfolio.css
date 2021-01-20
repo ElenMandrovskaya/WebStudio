@@ -160,6 +160,10 @@ textarea {
   background-color: transparent;
 }
 
+.menu-button .icon-close {
+  display: none;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
