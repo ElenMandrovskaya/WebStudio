@@ -142,7 +142,6 @@ textarea {
 }
 
 .menu-button {
-  position: absolute;
   right: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -192,7 +191,6 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .site-nav {
-    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
   }
