@@ -1,4 +1,6 @@
 .menu-button {
+  position: absolute;
+  right: 0;
   display: inline-flex;
   padding: 0;
   margin-left: auto;
@@ -36,6 +38,7 @@
 }
 @media screen and (max-width: 767px) {
   .site-nav {
+    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
   }
