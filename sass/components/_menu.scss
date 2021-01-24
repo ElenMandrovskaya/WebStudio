@@ -50,10 +50,7 @@
       justify-content: space-between;
     }
   }
-  .site-nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+
   .site-nav__list {
     margin-bottom: 306px;
   }
@@ -70,7 +67,8 @@
       color: var(--accent-text-color);
     }
   }
-  .contacts__icon {
+  .contacts__icon-email,
+  .contacts__icon-tel {
     display: none;
   }
   .contacts {
@@ -119,13 +117,5 @@
       height: 22px;
       border: 1px solid rgba(33, 33, 33, 0.2);
     }
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-  .mobile-social__list {
-    display: none;
   }
 }
