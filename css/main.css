@@ -198,7 +198,7 @@ textarea {
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -291,6 +291,7 @@ textarea {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
