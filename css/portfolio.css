@@ -214,6 +214,7 @@ textarea {
     max-height: 796px;
     background-color: #ffffff;
     padding: 48px 40px;
+    z-index: 8888;
   }
   .mobile-menu.is-open {
     display: -webkit-box;
@@ -226,7 +227,6 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    z-index: 500;
   }
   .site-nav__list {
     margin-bottom: 306px;

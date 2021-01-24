@@ -44,11 +44,11 @@
     max-height: 796px;
     background-color: #ffffff;
     padding: 48px 40px;
+    z-index: 8888;
     &.is-open {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      z-index: 500;
     }
   }
 
